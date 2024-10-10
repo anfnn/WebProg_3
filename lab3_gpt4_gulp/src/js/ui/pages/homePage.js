@@ -5,6 +5,8 @@ import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initExpectations from "./../components/initExpectations.js";
 import initRegistration from "./../components/initRegistration.js";
+import initNews from "./../components/initNews.js";
+import initMany_news from "./../components/initMany_news.js";
 import initBurger from "./../components/initBurger.js";
 
 
@@ -19,6 +21,10 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section future_here"></section>
     <section class="section expectations"></section>
     <section class="section registration"></section>
+    <section class="section News"></section>
+    <section class="section many_news"></section>
+
+
 
 
   `;
@@ -56,6 +62,12 @@ const homePage = () => {
 
   const RegistrationNode = rootNode.querySelector(".registration");
   initRegistration(RegistrationNode);
+
+  const NewsNode = rootNode.querySelector(".News");
+  initNews(NewsNode);
+
+  const Many_newsNode = rootNode.querySelector(".many_news");
+  initMany_news(Many_newsNode);
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);

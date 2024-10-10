@@ -8,7 +8,7 @@ export const ExpectationsTemplate = ({
 }) => {
 
   const resultTemplate = `
-     <img class="future_image" src="${img.src}" alt=${img.alt} />
+       <img class="future_image" src="${img.src}" alt=${img.alt} />
           <div class = "right_container2">
             <p  class="right_cta">${cta}</p>
             <h2 class="right__header">
@@ -19,7 +19,6 @@ export const ExpectationsTemplate = ({
             </p>
             <a href="${button.href}" class="right_cta2">${button.text}</a>
           </div>
-      </section>   
     `;
 
   return resultTemplate;
