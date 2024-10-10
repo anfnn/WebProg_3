@@ -7,6 +7,7 @@ import initExpectations from "./../components/initExpectations.js";
 import initRegistration from "./../components/initRegistration.js";
 import initNews from "./../components/initNews.js";
 import initMany_news from "./../components/initMany_news.js";
+import initfooter from "../components/initfooter.js";
 import initBurger from "./../components/initBurger.js";
 
 
@@ -23,6 +24,8 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section registration"></section>
     <section class="section News"></section>
     <section class="section many_news"></section>
+    <footer></footer>
+
 
 
 
@@ -68,6 +71,10 @@ const homePage = () => {
 
   const Many_newsNode = rootNode.querySelector(".many_news");
   initMany_news(Many_newsNode);
+
+  const footerNode = rootNode.querySelector("footer");
+  initfooter(footerNode);
+
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
