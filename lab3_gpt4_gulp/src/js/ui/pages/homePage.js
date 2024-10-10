@@ -3,9 +3,8 @@ import initHero from "./../components/initHero.js";
 import initBrands from "./../components/initBrands.js";
 import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
-import initBurger from "./../components/initExpectations.js";
+import initExpectations from "./../components/initExpectations.js";
 import initBurger from "./../components/initBurger.js";
-
 
 
 const createHomePageTemplate = (rootNode) => {
@@ -18,9 +17,6 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
     <section class="section expectations"></section>
-    <section class="section registration"></section>
-    <section class="section News"></section>
-    <section class="many_news"></section>
 
   `;
 
