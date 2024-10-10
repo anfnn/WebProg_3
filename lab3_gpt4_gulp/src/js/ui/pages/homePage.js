@@ -4,6 +4,7 @@ import initBrands from "./../components/initBrands.js";
 import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initExpectations from "./../components/initExpectations.js";
+import initRegistration from "./../components/initRegistration.js";
 import initBurger from "./../components/initBurger.js";
 
 
@@ -17,6 +18,8 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
     <section class="section expectations"></section>
+    <section class="section registration"></section>
+
 
   `;
 
@@ -50,6 +53,9 @@ const homePage = () => {
 
   const ExpectationseNode = rootNode.querySelector(".expectations");
   initExpectations(ExpectationseNode);
+
+  const RegistrationNode = rootNode.querySelector(".registration");
+  initRegistration(RegistrationNode);
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
